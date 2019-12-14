@@ -31,7 +31,7 @@ render() {
 |Name               |Type        |Default                                                                     |Description
 |-------------------|------------|----------------------------------------------------------------------------|--------------------------------
 |content            | `string`   | ''                                                                         | HTML or a text string as an input
-|onChange*           | `func`     |                                                                            | onChange handler of the Editor.
+|onChange*          | `func`     |                                                                            | onChange handler of the Editor.
 |editorStyle        | `object`   | { minHeight: 300, maxHeight: 350, overflowY: 'scroll', outline: 'none' }   | Override the editorStyle style.
 
 \* required property
