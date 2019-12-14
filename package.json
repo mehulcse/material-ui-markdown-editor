@@ -1,0 +1,71 @@
+{
+  "name": "material-ui-editor",
+  "version": "1.0.0",
+  "description": "Material ui editor",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "babel src -d lib --copy-files",
+    "prepublish": "babel src -d lib --copy-files",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "publish-docs": "npm run styleguide:build && npm run gh-pages",
+    "gh-pages": "./node_modules/.bin/gh-pages -d styleguide",
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeamWertarbyte/material-ui-image.git"
+  },
+  "keywords": [
+    "react",
+    "material",
+    "editor",
+    "wysiwyg",
+    "react-component"
+  ],
+  "author": "Mehul Thakkar <mehulthakkar02@gmail.com> (https://mehulcse.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TeamWertarbyte/material-ui-image/issues"
+  },
+  "homepage": "https://github.com/TeamWertarbyte/material-ui-image#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "@fortawesome/fontawesome-common-types": "^0.2.21",
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@material-ui/core": "^4.7.2",
+    "@material-ui/icons": "^4.5.1",
+    "@material-ui/styles": "^4.7.1",
+    "@webpack-blocks/babel": "^2.0.1",
+    "@webpack-blocks/postcss": "^2.0.1",
+    "@webpack-blocks/webpack": "^2.0.1",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "gh-pages": "^1.1.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-styleguidist": "^10.3.2",
+    "standard": "^12.0.1",
+    "webpack": "^4.41.2",
+    "webpack-blocks": "^2.0.1"
+  },
+  "peerDependencies": {
+    "@material-ui/icons": "^1.0.0 || ^3.0.0",
+    "@material-ui/core": "^1.0.0 || ^2.0.0 || ^3.0.0 || ^4.0.0",
+    "react": "^16.12.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
