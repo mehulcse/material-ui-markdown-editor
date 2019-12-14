@@ -19,8 +19,8 @@ import Image from 'material-ui-editor'
 render() {
   return (
     <div>
-      <Editor content={"<h1>I Am The Iron Man</h1>"}
-                onChange={(event)=>{}}/>
+      <Editor content={"<h1>Lorem Ipsum</h1>"}
+              onChange={(event)=>{}}/>
     </div>
   )
 }
