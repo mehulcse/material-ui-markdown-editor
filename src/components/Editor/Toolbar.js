@@ -17,7 +17,7 @@ import {
 import AppIcon from '../Shared/app-icon'
 import IconButton from '../Shared/icon-btn'
 
-const Toolbar = ({ showPreview, content }) => {
+const Toolbar = ({ content }) => {
   const addLink = () => {
     const linkURL = prompt('Enter a URL:', 'http://')
     if (linkURL !== null) {
@@ -247,16 +247,17 @@ const Toolbar = ({ showPreview, content }) => {
             <AppIcon icon={faEraser} size="sm"/>
           </IconButton>
         </Tooltip>
-        <Tooltip title="Preview">
-          <IconButton
-            color="inherit"
-            id="preview"
-            aria-label="Preview"
-            onClick={showPreview}
-          >
-            <AppIcon icon={faEye} size="sm"/>
-          </IconButton>
-        </Tooltip>
+        {/*ToDo: Add Preview feature*/}
+        {/*<Tooltip title="Preview">*/}
+        {/*  <IconButton*/}
+        {/*    color="inherit"*/}
+        {/*    id="preview"*/}
+        {/*    aria-label="Preview"*/}
+        {/*    onClick={showPreview}*/}
+        {/*  >*/}
+        {/*    <AppIcon icon={faEye} size="sm"/>*/}
+        {/*  </IconButton>*/}
+        {/*</Tooltip>*/}
         <Tooltip title="Print">
           <IconButton
             color="inherit"

@@ -1,25 +1,18 @@
-import React, {useState} from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import {
   Box,
 } from '@material-ui/core'
 import Editable from './Editable'
-import PreviewModal from './PreviewModal'
 import Toolbar from './Toolbar';
 
 const Editor = ({content, onChange, editorStyle}) => {
-  const [showPreview, setShowPreview] = useState(false);
-
   return (
     <Box position="relative">
-      <Toolbar showPreview={() => setShowPreview(true)}
-               content={content}/>
+      <Toolbar content={content}/>
       <Editable onChange={onChange}
                 content={content}
                 editorStyle={editorStyle}/>
-      <PreviewModal content={content}
-                    displayPreview={showPreview}
-                    closePreview={() => setShowPreview(false)}/>
     </Box>
 
   )
