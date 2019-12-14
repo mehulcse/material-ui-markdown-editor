@@ -2,6 +2,9 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 
+## Example
+![Example](demo.png)
+
 ## Installation
 
 ```sh
@@ -19,6 +22,7 @@ import Editor from 'material-ui-editor'
 render() {
   return (
     <div>
+      //...
       <Editor content={"<h1>Lorem Ipsum</h1>"}
               onChange={(event)=>{}}/>
     </div>
