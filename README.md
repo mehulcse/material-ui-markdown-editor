@@ -12,7 +12,7 @@ npm install material-ui-editor
 
 
 ```js
-import Image from 'material-ui-editor'
+import Editor from 'material-ui-editor'
 
 // ...
 
