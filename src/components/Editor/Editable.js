@@ -22,6 +22,7 @@ const Editable = ({ onChange, editorStyle, content }) => {
   return (
     <Container>
       <ContentEditable
+        style={editorStyle}
         html={md.render(content)}
         onChange={emitChange}
       />
