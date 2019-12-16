@@ -1,4 +1,4 @@
-# Material UI Editor
+# Material UI Markdown Editor
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 
@@ -8,14 +8,14 @@
 ## Installation
 
 ```sh
-npm install material-ui-editor
+npm install material-ui-markdown-editor
 ```
 
 ## Usage
 
 
 ```js
-import Editor from 'material-ui-editor'
+import Editor from 'material-ui-markdown-editor'
 
 // ...
 
