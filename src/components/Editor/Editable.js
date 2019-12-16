@@ -8,7 +8,11 @@ import {
 } from '@material-ui/core'
 
 const Editable = ({ onChange, editorStyle, content }) => {
-  const md = new MarkdownIt()
+  const md = new MarkdownIt('default', {
+    html: true,
+    linkify: true,
+    typographer: true
+  })
   const emitChange = event => {
     const { innerHTML } = event.target
     console.log(md.render(innerHTML))
