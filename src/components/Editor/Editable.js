@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 // import DOMPurify from 'dompurify'
 import MarkdownIt from 'markdown-it'
+import ContentEditable from 'react-contenteditable'
 import {
-  Box,
   Container
 } from '@material-ui/core'
 
@@ -21,11 +21,10 @@ const Editable = ({ onChange, editorStyle, content }) => {
 
   return (
     <Container>
-      <Box
-        style={editorStyle}
-        contentEditable='true'
-        dangerouslySetInnerHTML={{ __html: md.render(content) }}
-        onInput={emitChange} />
+      <ContentEditable
+        html={md.render(content)}
+        onChange={emitChange}
+      />
     </Container>
   )
 }
