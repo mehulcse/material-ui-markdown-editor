@@ -24,7 +24,7 @@ render() {
     <div>
       //...
       <Editor content={"<h1>Lorem Ipsum</h1>"}
-              onChange={(event)=>{}}/>
+              onChange={(content)=>{}}/>
     </div>
   )
 }

@@ -2,13 +2,16 @@ Normal:
 ```
 const { Button } = require('@material-ui/core');
 initialState = {
-  count: 0,
-  show: true
+    content: "<h1>Lorem Ipsum</h1>",
 };
 
+onChange = (content) => {
+    setState({ content })
+}
+
 <div>
-  <Editor content={"<h1>I Am The Iron Man</h1>"}
-          onChange={(event)=>{}}/>
+  <Editor content={state.content}
+          onChange={onChange}/>
 </div>
 ```
 
