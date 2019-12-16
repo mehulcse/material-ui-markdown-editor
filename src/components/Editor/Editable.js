@@ -1,13 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+// import DOMPurify from 'dompurify'
+import MarkdownIt from 'markdown-it'
 import {
   Box,
-  Container,
+  Container
 } from '@material-ui/core'
 
 const Editable = ({ onChange, editorStyle, content }) => {
+  const md = new MarkdownIt()
   const emitChange = event => {
     const { innerHTML } = event.target
+    console.log(md.render(innerHTML))
     onChange(innerHTML)
   }
 
@@ -15,9 +19,9 @@ const Editable = ({ onChange, editorStyle, content }) => {
     <Container>
       <Box
         style={editorStyle}
-        contentEditable="true"
-        dangerouslySetInnerHTML={{ __html: content }}
-        onInput={emitChange}/>
+        contentEditable='true'
+        dangerouslySetInnerHTML={{ __html: md.render(content) }}
+        onInput={emitChange} />
     </Container>
   )
 }
